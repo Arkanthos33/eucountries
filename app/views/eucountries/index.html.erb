@@ -2,14 +2,19 @@
     <h1>Liste des pays de l'Union Européenne</h1>
 </html>
 <% Country.all.each do |c| %>
-    <div>
-        <p> Nom:<%= c.name%></p>
-        <p> Capitale:<%= c.capital%></p>
-        <p> Adhésion<%= c.membership%></p>
-        <p> Population<%= c.population%> millions d’habitants (2020)</p> 
-        <p> Régime Politique<%= c.state%></p>
-        <p> Monnaie:<%= c.money%></p>
-        <p> Langue officielle:<%= c.language%></p>
-        <img src="<%= c.flag %>" width=200 alt />
+    <div class=pays>
+        <div class=info>
+            <p> Nom:<%= c.name%></p>
+            <p> Capitale:<%= c.capital%></p>
+            <p> Adhésion<%= c.membership%></p>
+            <p> Population<%= c.population%> millions d’habitants (2020)</p> 
+            <p> Régime Politique<%= c.state%></p>
+            <p> Monnaie:<%= c.money%></p>
+            <p> Langue officielle:<%= c.language%></p>
+
+        </div>
+        <div class=drapeux>
+            <img src="<%= c.flag %>" width=200 alt />
+        </div>
     </div>
 <% end %>
