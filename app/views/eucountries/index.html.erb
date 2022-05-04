@@ -1,0 +1,15 @@
+<html>
+    <h1>Liste des pays de l'Union Européenne</h1>
+</html>
+<% Country.all.each do |c| %>
+    <div>
+        <%= c.name%>
+        <%= c.capital%>
+        <%= c.membership%>
+        <%= c.population%>
+        <%= c.state%>
+        <%= c.money%>        
+        <%= c.language%>        
+        <img src="<%= c.flag %>" width=200 alt />
+    </div>
+<% end %>
