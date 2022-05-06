@@ -1,3 +1,7 @@
 .pays {
     display: flex;
 }
+
+body {
+    background-color: #FEF4EA;
+}
